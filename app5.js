@@ -19,7 +19,7 @@ var chartHeight = svgHeight - margin.top - margin.bottom;
 var chartWidth = svgWidth - margin.left - margin.right;   
 //-----------------------------------------------------------------------------------------------//
 // Read in CSV
-  d3.csv("assets/data/data.csv").then(function(csvData) {
+  d3.csv("data.csv").then(function(csvData) {
     console.log(csvData);
     csvData.forEach(function(data) {
       data.poverty = +data.poverty;
